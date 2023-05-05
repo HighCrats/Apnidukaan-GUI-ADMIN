@@ -2,7 +2,7 @@ import LeftBody from "../body/LeftBody";
 import RightBody from "../body/RightBody";
 import Footer from "../footer/Footer";
 import Header from "../header/Header";
-import Navbar from "../navbar/Navbar";
+// import Navbar from "../navbar/Navbar";
 import Service from "../service/Service";
 import Sidebar from "../sidebar/Sidebar";
 
@@ -16,7 +16,7 @@ function Home() {
             {/* important div start */}
             <div className="row p-0 m-0 proBanner" id="proBanner">
                 <div className="col-md-12 p-0 m-0">
-                    <div className="card-body card-body-padding d-flex align-items-center justify-content-between">
+                    <div className="card-body card-body-padding d-flex align-items-center justify-content-between border border-info">
                         <div className="ps-lg-1">
                             <div className="d-flex align-items-center justify-content-between">
                                 <p className="mb-0 font-weight-medium me-3 buy-now-text">
