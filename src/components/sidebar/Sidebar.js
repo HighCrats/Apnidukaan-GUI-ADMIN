@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
+
 function Sidebar() {
     return <>
-        <nav className="sidebar sidebar-offcanvas" id="sidebar">
+        <nav className="sidebar sidebar-offcanvas " id="sidebar">
             <ul className="nav ">
                 <li className="nav-item">
                     <a className="nav-link" href="index.html">
@@ -19,11 +21,11 @@ function Sidebar() {
                         <ul className="nav flex-column sub-menu">
                             <li className="nav-item">
                                 {" "}
-                                <a className="nav-link" href="pages/ui-features/buttons.html">Shipping</a>
+                                <a className="nav-link" href="#">Shipping</a>
                             </li>
                             <li className="nav-item">
                                 {" "}
-                                <a className="nav-link" href="pages/ui-features/dropdowns.html">Earning</a>
+                                <a className="nav-link" href="#">Earning</a>
                             </li>
                         </ul>
                     </div>
@@ -38,7 +40,7 @@ function Sidebar() {
                     <div className="collapse" id="form-elements">
                         <ul className="nav flex-column sub-menu">
                             <li className="nav-item">
-                                <a className="nav-link" href="pages/forms/basic_elements.html">
+                                <a className="nav-link" href="#">
                                     Basic Elements
                                 </a>
                             </li>
@@ -57,7 +59,7 @@ function Sidebar() {
                         <ul className="nav flex-column sub-menu">
                             <li className="nav-item">
                                 {" "}
-                                <a className="nav-link" href="pages/charts/chartjs.html">
+                                <a className="nav-link" href="#">
                                     ChartJs
                                 </a>
                             </li>
@@ -76,7 +78,7 @@ function Sidebar() {
                         <ul className="nav flex-column sub-menu">
                             <li className="nav-item">
                                 {" "}
-                                <a className="nav-link" href="pages/tables/basic-table.html">
+                                <a className="nav-link" href="#">
                                     Basic table
                                 </a>
                             </li>
@@ -95,7 +97,7 @@ function Sidebar() {
                         <ul className="nav flex-column sub-menu">
                             <li className="nav-item">
                                 {" "}
-                                <a className="nav-link" href="pages/icons/mdi.html">
+                                <a className="nav-link" href="#">
                                     Mdi icons
                                 </a>
                             </li>
@@ -119,11 +121,9 @@ function Sidebar() {
                     <div className="collapse" id="auth">
                         <ul className="nav flex-column sub-menu">
                             <li className="nav-item">
-                                {" "}
-                                <a className="nav-link" href="pages/samples/login.html">
-                                    {" "}
-                                    Login{" "}
-                                </a>
+                                <Link to="/signup" className="nav-link">Sign-Up</Link>
+                                {/* href="pages/samples/login.html */}
+                                <Link to="/signin" className="nav-link" >Sign-In</Link>
                             </li>
                         </ul>
                     </div>
